@@ -1,0 +1,234 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frutica Wiki - Shipping & Delivery</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" integrity="..." crossorigin="anonymous">
+<style>
+/* Wiki Container */
+.wiki-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Section Cards */
+.wiki-container section {
+    background: var(--card);
+    padding: 25px 30px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Main Header */
+.wiki-container h1 {
+    font-size: 3em;
+    font-weight: 800;
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: -50px;
+}
+
+/* Subheaders */
+.wiki-container h2 {
+    font-size: 1.6em;
+    color: var(--dark);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.wiki-container h2 i {
+    color: var(--accent);
+}
+
+/* Text and Lists */
+.wiki-container p, .wiki-container li {
+    color: var(--muted);
+    font-size: 1em;
+    line-height: 1.8;
+}
+.wiki-container ul {
+    padding-left: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Notes / Alerts */
+.wiki-note {
+    padding: 20px 25px;
+}
+.wiki-note h3 {
+    font-size: 1.3em;
+    margin-bottom: 8px;
+}
+.wiki-note p {
+    margin: 0;
+}
+
+/* Tables */
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.styled-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    text-align: center;
+    overflow: hidden;
+    font-family: "Nunito", sans-serif;
+    box-shadow: var(--shadow);
+    border-radius: 12px;
+}
+.styled-table th, .styled-table td {
+    padding: 15px 20px;
+}
+.styled-table thead {
+    background: var(--accent);
+    color: white;
+    font-weight: 700;
+}
+.styled-table thead th:first-child {
+    border-top-left-radius: 12px;
+}
+.styled-table thead th:last-child {
+    border-top-right-radius: 12px;
+}
+.styled-table tbody tr {
+    background: var(--card);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+.styled-table td {
+    color: var(--dark);
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <img src="logo.png" alt="" style="width:125px;height:75px;">
+    <div>Fruti<span>ca</span></div>
+  </div>
+  <div class="menu-toggle" id="menuToggle"><div></div><div></div><div></div></div>
+  <nav id="navbar">
+    <a href="index.html">HOME</a><a href="about.html">ABOUT</a><a href="index.html#products">PRODUCTS</a><a href="wiki_faq.html">HELP</a><a href="index.html#contact">CONTACT</a>
+  </nav>
+  <button class="cta" onclick="location.href='index.html#fruit_facts'">FRUIT FACTS</button>
+  <div class="nav-mosaic"></div>
+</header>
+
+<main>
+<section class="wiki-container">
+    <h1>Shipping & Delivery</h1>
+
+    <section>
+        <h2><i class="fas fa-box text-accent"></i> Cold-Chain Commitment</h2>
+        <p>We use specialized, insulated packaging and high-density gel packs to maintain the cold chain from our facility to your door. This is critical to preserving the peak ripeness and flavor of your Frutica order.</p>
+    </section>
+
+    <section>
+        <h2><i class="fas fa-clock text-accent"></i> Order Processing Times</h2>
+        <ul>
+            <li>Orders placed before 12:00 PM EST Monday–Friday typically ship the same day.</li>
+            <li>Orders placed after 12:00 PM EST or on weekends/holidays will be processed the next business day.</li>
+            <li>Due to the perishable nature of our products, we do not ship over the weekend to prevent packages from sitting in transit.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2><i class="fas fa-truck text-accent"></i> Delivery Options</h2>
+        <div class="table-wrapper">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Transit Time</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Standard Fresh</td>
+                        <td>2–3 Business Days</td>
+                        <td>$9.99 (Free over $75)</td>
+                    </tr>
+                    <tr>
+                        <td>Express Peak</td>
+                        <td>1–2 Business Days</td>
+                        <td>$19.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="wiki-note">
+        <h3><i class="fas fa-exclamation-triangle"></i> Important Delivery Note</h3>
+        <p>Please ensure someone is available to receive the package upon delivery. As a perishable item, fruit should be refrigerated immediately. Frutica is not responsible for spoilage due to delivery delays caused by the recipient.</p>
+    </section>
+</section>
+</main>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-column">
+            <h4>Frutica</h4>
+            <p>We are a premium fresh fruit agency focused on bringing you the most elegant and stylish produce for your business and personal needs.</p>
+            <div class="social-links">
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html#team">Team</a></li>
+                <li><a href="wiki_faq.html">Help / Wikis</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Products</h4>
+            <ul>
+                <li><a href="index.html#products">Seasonal Baskets</a></li>
+                <li><a href="index.html#products">Premium Export</a></li>
+                <li><a href="index.html#products">Wholesale Orders</a></li>
+                <li><a href="index.html#products">Fruit Jams</a></li>
+                <li><a href="index.html#products">Juice Subscriptions</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Have a Question?</h4>
+            <p><i class="fas fa-map-marker-alt" style="color:var(--accent-2); margin-right: 8px;"></i> 123 Fruit Street, Freshville, CA 90210</p>
+            <p><i class="fas fa-phone" style="color:var(--accent-2); margin-right: 8px;"></i> <a href="tel:+12345678900">+1 234 567 8900</a></p>
+            <p><i class="fas fa-envelope" style="color:var(--accent-2); margin-right: 8px;"></i> <a href="mailto:info@frutica.com">info@frutica.com</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 Frutica. All rights reserved. | <a href="#">Terms & Conditions</a>
+    </div>
+</footer>
+
+<script src="design.js"></script>
+</body>
+</html>

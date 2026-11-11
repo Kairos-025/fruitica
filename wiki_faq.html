@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Frutica Wiki - FAQ</title>
+
+<!-- FONTS + ICONS -->
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" integrity="..." crossorigin="anonymous">
+<style>
+/* ---------------------------------------------------------
+   GLOBAL PAGE & WIKI CONTAINER
+--------------------------------------------------------- */
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+.wiki-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.wiki-container h1 {
+    font-size: 3em;
+    font-weight: 800;
+    color: var(--dark);
+    text-align: center;
+    margin-top: -20px;
+}
+
+/* ---------------------------------------------------------
+   ACCORDION / FAQ CARDS
+--------------------------------------------------------- */
+.faq-card {
+    background: var(--card);
+    border-radius: 20px;
+    padding: 25px 30px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.faq-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+details {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+details summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details p {
+    margin-top: 18px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    color: var(--muted);
+    font-size: 1em;
+    line-height: 1.8;
+}
+
+details[open] summary {
+    color: var(--accent);
+}
+
+details i {
+    color: var(--accent);
+    transition: 0.3s;
+}
+
+details[open] i {
+    transform: rotate(180deg);
+}
+
+/* ---------------------------------------------------------
+   LINKS INSIDE ANSWERS
+--------------------------------------------------------- */
+.faq-link {
+    color: var(--accent);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.faq-link:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="brand">
+    <img src="logo.png" alt="" style="width:125px;height:75px;">
+    <div>Fruti<span>ca</span></div>
+  </div>
+  <div class="menu-toggle" id="menuToggle"><div></div><div></div><div></div></div>
+  <nav id="navbar">
+    <a href="index.html">HOME</a><a href="about.html">ABOUT</a><a href="index.html#products">PRODUCTS</a><a href="wiki_faq.html">HELP</a><a href="index.html#contact">CONTACT</a>
+  </nav>
+  <button class="cta" onclick="location.href='index.html#fruit_facts'">FRUIT FACTS</button>
+  <div class="nav-mosaic"></div>
+</header>
+
+<main>
+<section class="wiki-container">
+
+    <h1>Frequently Asked Questions</h1>
+
+    <!-- FAQ 1 -->
+    <details class="faq-card">
+        <summary>
+            What makes Frutica’s fruit “peak-ripened”?
+            <i class="fas fa-chevron-down"></i>
+        </summary>
+        <p>
+            Peak-ripened means your fruit is harvested at its natural flavor peak —
+            not early for long storage. Fast cold-chain logistics preserve the exact state
+            it was picked in, so it hits your door bursting with sweetness.
+        </p>
+    </details>
+
+    <!-- FAQ 2 -->
+    <details class="faq-card">
+        <summary>
+            Do you offer organic or sustainably grown options?
+            <i class="fas fa-chevron-down"></i>
+        </summary>
+        <p>
+            Yup. We partner with farms practicing regenerative, organic,
+            and ethically certified methods. Check product pages for the
+            specific sourcing breakdown.
+        </p>
+    </details>
+
+    <!-- FAQ 3 -->
+    <details class="faq-card">
+        <summary>
+            Can I track my order?
+            <i class="fas fa-chevron-down"></i>
+        </summary>
+        <p>
+            For sure. Once your order ships, you’ll get a tracking link.  
+            For shipping details, visit our
+            <a href="wiki_shipping.html" class="faq-link">Shipping & Delivery Wiki</a>.
+        </p>
+    </details>
+
+    <!-- FAQ 4 -->
+    <details class="faq-card">
+        <summary>
+            What if my fruit arrives damaged?
+            <i class="fas fa-chevron-down"></i>
+        </summary>
+        <p>
+            You’re covered with our Peak Flavor Guarantee.  
+            If your fruit arrives damaged, contact us within 48 hours with photos
+            and we’ll replace or refund. Full policy is on the  
+            <a href="wiki_returns.html" class="faq-link">Returns & Guarantee Wiki</a>.
+        </p>
+    </details>
+
+    <!-- FAQ 5 -->
+    <details class="faq-card">
+        <summary>
+            How should I store my fruit?
+            <i class="fas fa-chevron-down"></i>
+        </summary>
+        <p>
+            Storage depends on the fruit. Some need room-temp ripening (like mangoes),
+            others go straight to the fridge (like berries).  
+            Check the full chart at our
+            <a href="wiki_storage.html" class="faq-link">Storage & Ripening Guide</a>.
+        </p>
+    </details>
+
+    <!-- FAQ 6 -->
+    <details class="faq-card">
+        <summary>
+            Do you offer wholesale or business order options?
+            <i class="fas fa-chevron-down"></i>
+        </summary>
+        <p>
+            Yep — we handle bulk supply for restaurants, cafés, offices, and corporate gifting.
+            Check out our full breakdown here:
+            <a href="wiki_business.html" class="faq-link">Wholesale & Business Inquiries Wiki</a>.
+        </p>
+    </details>
+
+</section>
+</main>
+
+<!-- FOOTER SECTION -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-column">
+            <h4>Frutica</h4>
+            <p>We are a premium fresh fruit agency focused on bringing you the most elegant and stylish produce for your business and personal needs.</p>
+            <div class="social-links">
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html#team">Team</a></li>
+                <li><a href="wiki_faq.html">Help / Wikis</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Products</h4>
+            <ul>
+                <li><a href="index.html#products">Seasonal Baskets</a></li>
+                <li><a href="index.html#products">Premium Export</a></li>
+                <li><a href="index.html#products">Wholesale Orders</a></li>
+                <li><a href="index.html#products">Fruit Jams</a></li>
+                <li><a href="index.html#products">Juice Subscriptions</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Have a Question?</h4>
+            <p><i class="fas fa-map-marker-alt" style="color:var(--accent-2); margin-right: 8px;"></i> 123 Fruit Street, Freshville, CA 90210</p>
+            <p><i class="fas fa-phone" style="color:var(--accent-2); margin-right: 8px;"></i> <a href="tel:+12345678900">+1 234 567 8900</a></p>
+            <p><i class="fas fa-envelope" style="color:var(--accent-2); margin-right: 8px;"></i> <a href="mailto:info@frutica.com">info@frutica.com</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 Frutica. All rights reserved. | <a href="#">Terms & Conditions</a>
+    </div>
+</footer>
+
+<script src="design.js"></script>
+</body>
+</html>

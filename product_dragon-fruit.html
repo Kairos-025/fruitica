@@ -1,0 +1,241 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dynamic Frutica Product Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" integrity="..." crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --dark: #111;
+            --muted: #6b6b6b;
+            --card: #fff;
+            --shadow: 0 8px 30px rgba(19, 22, 28, 0.08);
+            --accent: #a99328;
+            --accent-2: #ffd966;
+            --accent-shadow: rgba(169, 147, 40, 0.5);
+        }
+        .cta-button-frutica {
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+            box-shadow: 0 8px 30px var(--accent-shadow);
+            color: white !important; 
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cta-button-frutica:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px var(--accent-shadow);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col" data-product-id="FRT-020">
+<header>
+    <div class="brand">
+        <img src="logo.png" alt="" style="width:125px;height:75px;">
+        <div>Fruti<span>ca</span></div>
+    </div>
+    <div class="menu-toggle" id="menuToggle"><div></div><div></div><div></div></div>
+    <nav id="navbar">
+        <a href="index.html">HOME</a><a href="about.html">ABOUT</a><a href="index.html#products">PRODUCTS</a><a href="wiki_faq.html">HELP</a><a href="index.html#contact">CONTACT</a>
+    </nav>
+    <button class="cta" onclick="location.href='index.html#fruit_facts'">FRUIT FACTS</button>
+    <div class="nav-mosaic"></div>
+</header>
+
+<main class="flex-grow p-4 sm:p-8">
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
+        <div class="md:flex">
+            <div class="md:w-1/2 p-6 bg-gray-50 flex flex-col items-center justify-center">
+                <h2 id="product-id" class="text-xs font-semibold uppercase text-[var(--accent)] mb-2 tracking-widest">PRODUCT ID</h2>
+                <img id="product-image" src="" alt="" class="w-full max-w-sm rounded-lg shadow-lg border border-gray-200">
+                <p id="product-tagline" class="mt-4 text-sm text-[var(--muted)] italic">Hand-picked and ready to ship.</p>
+            </div>
+            <div class="md:w-1/2 p-8">
+                <h1 id="product-name" class="text-3xl font-extrabold text-[var(--dark)] mb-4">Product Name</h1>
+                <div class="flex items-baseline mb-6">
+                    <span id="current-price" class="text-5xl font-bold text-[var(--accent)]">$0.00</span>
+                    <span class="text-xl text-[var(--muted)] ml-2">Total</span>
+                </div>
+                <p class="text-sm font-medium text-green-600 mb-8 p-1 bg-green-50 w-max rounded-full px-3">
+                    <span class="mr-1">●</span> In Stock
+                </p>
+                <form id="product-form" class="space-y-6">
+                    <div>
+                        <label for="variety" class="block text-sm font-medium text-[var(--dark)] mb-2">Select Variety:</label>
+                        <select id="variety" name="variety" class="mt-1 block w-full pl-3 pr-10 py-3 text-base border-gray-300 focus:outline-none focus:ring-[var(--accent)] focus:border-[var(--accent)] sm:text-sm rounded-lg shadow-sm"></select>
+                    </div>
+                    <div>
+                        <label for="weight" class="block text-sm font-medium text-[var(--dark)] mb-2">Select Weight/Quantity:</label>
+                        <select id="weight" name="weight" class="mt-1 block w-full pl-3 pr-10 py-3 text-base border-gray-300 focus:outline-none focus:ring-[var(--accent)] focus:border-[var(--accent)] sm:text-sm rounded-lg shadow-sm"></select>
+                    </div>
+                    <button type="submit" class="cta-button-frutica w-full flex justify-center py-3 px-4 rounded-lg shadow-xl text-lg font-medium transition duration-150 ease-in-out transform hover:scale-[1.01] active:scale-[0.99]">
+                        <i class="fas fa-shopping-cart mr-2 mt-1.5"></i> Add to Cart
+                    </button>
+                </form>
+                <div class="mt-8 pt-6 border-t border-gray-200">
+                    <h3 class="text-lg font-semibold text-[var(--dark)] mb-2">Detailed Description</h3>
+                    <p id="product-description" class="text-[var(--muted)] text-sm">Description here.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-8 bg-gray-50">
+                <h3 class="text-xl font-bold text-[var(--dark)] mb-4">Specifications & Benefits</h3>
+                <div class="grid grid-cols-2 gap-4 text-sm">
+                    <div class="p-3 bg-white rounded-lg shadow">
+                        <p class="font-medium text-[var(--dark)]">Origin</p>
+                        <p class="text-[var(--muted)]">Southeast Asian Tropical Farms</p>
+                    </div>
+                    <div class="p-3 bg-white rounded-lg shadow">
+                        <p class="font-medium text-[var(--dark)]">Nutritional Highlight</p>
+                        <p class="text-[var(--muted)]">Rich in Vitamin C & Antioxidants</p>
+                    </div>
+                    <div class="p-3 bg-white rounded-lg shadow">
+                        <p class="font-medium text-[var(--dark)]">Storage</p>
+                        <p class="text-[var(--muted)]">Refrigerate for freshness, consume within 5 days</p>
+                    </div>
+                    <div class="p-3 bg-white rounded-lg shadow">
+                        <p class="font-medium text-[var(--dark)]">Pesticide Free</p>
+                        <p class="text-[var(--muted)]">Organic and sustainably sourced options available</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</main>
+
+<footer>
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h4>Frutica</h4>
+                <p>We are a premium fresh fruit agency focused on bringing you the most elegant and stylish produce for your business and personal needs.</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html#team">Team</a></li>
+                    <li><a href="wiki_faq.html">Help / Wikis</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="index.html#products">Seasonal Baskets</a></li>
+                    <li><a href="index.html#products">Premium Export</a></li>
+                    <li><a href="index.html#products">Wholesale Orders</a></li>
+                    <li><a href="index.html#products">Fruit Jams</a></li>
+                    <li><a href="index.html#products">Juice Subscriptions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Have a Question?</h4>
+                <p><i class="fas fa-map-marker-alt" style="color:var(--accent-2); margin-right: 8px;"></i> 123 Fruit Street, Freshville, CA 90210</p>
+                <p><i class="fas fa-phone" style="color:var(--accent-2); margin-right: 8px;"></i> <a href="tel:+12345678900">+1 234 567 8900</a></p>
+                <p><i class="fas fa-envelope" style="color:var(--accent-2); margin-right: 8px;"></i> <a href="mailto:info@frutica.com">info@frutica.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Frutica. All rights reserved. | <a href="#">Terms & Conditions</a>
+        </div>
+    </footer>
+
+<script src="design.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const productId = document.body.dataset.productId;
+    const varietySelect = document.getElementById('variety');
+    const weightSelect = document.getElementById('weight');
+    const currentPriceSpan = document.getElementById('current-price');
+    const productForm = document.getElementById('product-form');
+    const productImage = document.getElementById('product-image');
+    const productName = document.getElementById('product-name');
+    const productDescription = document.getElementById('product-description');
+    const productIdLabel = document.getElementById('product-id');
+
+    loadProducts()  // backend database, or fruits.json if no backend
+        .then(products => {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+
+            // Fill header info
+            productImage.src = product.image;
+            productImage.alt = product.name;
+            productName.textContent = product.name;
+            productDescription.textContent = product.description;
+            productIdLabel.textContent = `PRODUCT ID: ${product.id}`;
+
+            // Populate dropdowns
+            Object.entries(product.varieties).forEach(([key, variety]) => {
+                const option = document.createElement('option');
+                option.value = key;
+                option.textContent = variety.name;
+                varietySelect.appendChild(option);
+            });
+
+            Object.entries(product.weights).forEach(([key, weight]) => {
+                const option = document.createElement('option');
+                option.value = key;
+                option.textContent = weight.name;
+                weightSelect.appendChild(option);
+            });
+
+            // Set default selections
+            varietySelect.selectedIndex = 0;
+            weightSelect.selectedIndex = 0;
+
+            const updatePrice = () => {
+                const varietyFactor = product.varieties[varietySelect.value].factor;
+                const weightFactor = product.weights[weightSelect.value].factor;
+                let finalPrice = product.defaultPrice * varietyFactor * weightFactor;
+                finalPrice = Math.round(finalPrice * 100) / 100;
+                currentPriceSpan.textContent = `$${finalPrice.toFixed(2)}`;
+            };
+
+            varietySelect.addEventListener('change', updatePrice);
+            weightSelect.addEventListener('change', updatePrice);
+            updatePrice();
+
+            productForm.addEventListener('submit', e => {
+                e.preventDefault();
+                const selectedVariety = product.varieties[varietySelect.value].name;
+                const selectedWeight = product.weights[weightSelect.value].name;
+                const price = currentPriceSpan.textContent;
+
+                console.log(`Adding to Cart: ${product.name}`);
+                console.log(`Variety: ${selectedVariety}`);
+                console.log(`Weight: ${selectedWeight}`);
+                console.log(`Price: ${price}`);
+
+                const submitButton = productForm.querySelector('button[type="submit"]');
+                const originalText = submitButton.innerHTML;
+
+                submitButton.innerHTML = '<i class="fas fa-check-circle mr-2 mt-1.5"></i> Added!';
+                submitButton.disabled = true;
+
+                setTimeout(() => {
+                    submitButton.innerHTML = originalText;
+                    submitButton.disabled = false;
+                }, 2000);
+            });
+        });
+});
+</script>
+</body>
+</html>

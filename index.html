@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Frutica</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" integrity="..." crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<style>
+ 
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <img src="logo.png" alt="" style="width:125px;height:75px;">
+    <div>Fruti<span>ca</span></div>
+  </div>
+  <div class="menu-toggle" id="menuToggle"><div></div><div></div><div></div></div>
+  <nav id="navbar">
+    <a href="index.html">HOME</a><a href="about.html">ABOUT</a><a href="index.html#products">PRODUCTS</a><a href="wiki_faq.html">HELP</a><a href="index.html#contact">CONTACT</a>
+  </nav>
+  <button class="cta" onclick="location.href='index.html#fruit_facts'">FRUIT FACTS</button>
+  <div class="nav-mosaic"></div>
+</header>
+
+<main>
+<div class="hero-carousel">
+  <div class="hero-wrapper">
+    <section class="hero">
+      <div class="hero-left">
+        <div class="eyebrow">15 YEARS OF EXPERIENCE</div>
+        <h1>Focus<br>on Your <span class="accent">Menu</span></h1>
+        <div class="decor-wrapper">
+            <div class="decor"></div>
+            <div class="decor2"></div>
+        </div>
+        <p class="lead">We manage every step, ensuring peak flavor and quality, tree to your door.</p>
+        <a class="read-more" href="#">READ MORE</a>
+      </div>
+      <div class="hero-right">
+        <div class="frame-wrapper">
+          <div class="decor-bars"><div class="bar1"></div><div class="bar2"></div><div class="bar3"></div></div>
+          <div class="frame"><div class="landscape"><video autoplay muted loop playsinline><source src="fruit_video1.webm" type="video/webm"><source src="fruit_video1.mp4" type="video/mp4"></video></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="hero">
+      <div class="hero-left">
+        <div class="eyebrow">PREMIUM PRODUCE</div>
+        <h1>We Are Fresh<br>Fruit <span class="accent">Agency</span></h1>
+        <div class="decor-wrapper">
+            <div class="decor"></div>
+            <div class="decor2"></div>
+        </div>
+        <p class="lead">Serving top-quality, hand-picked produce from around the globe.</p>
+        <a class="read-more" href="#">VIEW CATALOGUE</a>
+      </div>
+      <div class="hero-right">
+        <div class="frame-wrapper">
+          <div class="decor-bars"><div class="bar1"></div><div class="bar2"></div><div class="bar3"></div></div>
+          <div class="frame"><div class="landscape"><video autoplay muted loop playsinline><source src="fruit_video2.webm" type="video/webm"><source src="fruit_video2.mp4" type="video/mp4"></video></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="hero">
+      <div class="hero-left">
+        <div class="eyebrow">GLOBAL SOURCING</div>
+        <h1>A Group of<br>Expert <span class="accent">Sourcing</span></h1>
+        <div class="decor-wrapper">
+            <div class="decor"></div>
+            <div class="decor2"></div>
+        </div>
+        <p class="lead">We plan and manage the logistics to ensure peak freshness upon delivery.</p>
+        <a class="read-more" href="#">LOGISTICS</a>
+      </div>
+      <div class="hero-right">
+        <div class="frame-wrapper">
+          <div class="decor-bars"><div class="bar1"></div><div class="bar2"></div><div class="bar3"></div></div>
+          <div class="frame"><div class="landscape"><video autoplay muted loop playsinline><source src="fruit_video3.webm" type="video/webm"><source src="fruit_video3.mp4" type="video/mp4"></video></div></div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="carousel-indicators"></div>
+</div>
+
+
+<div class="main-content-wrapper" id="products">
+    <div class="main-grid-container">
+        <div class="product-title-content">
+            <h1>We Are Here To Make Your <span class="highlight-accent">Catalogue</span> Look More <span class="highlight-accent">Elegant</span> And Stylish!</h1>
+            <div class="divider-wrapper">
+                <div class="divider1"></div>
+                <div class="divider2"></div>
+            </div>
+            <a href="#" id="learn-more-btn" class="view-all-button">LEARN MORE</a>
+        </div>
+
+        <div class="card">
+            <a href="product_apple.html">
+                <img src="apple (1).png" alt="Apple Icon" data-default="apple (1).png" data-hover="apple.png">
+            </a>
+            <h3>Apple</h3>
+        </div>
+
+        <div class="card">
+            <a href="product_grape.html">
+                <img src="grape (1).png" alt="Grape Icon" data-default="grape (1).png" data-hover="grape.png">
+            </a>
+            <h3>Grape</h3>
+        </div>
+
+        <div class="card">
+            <a href="product_strawberry.html">
+                <img src="strawberry (1).png" alt="Strawberry Icon" data-default="strawberry (1).png" data-hover="strawberry.png">
+            </a>
+            <h3>Strawberry</h3>
+        </div>
+
+        <div class="card">
+            <a href="product_kiwi.html">
+                <img src="kiwi (1).png" alt="Kiwi Icon" data-default="kiwi (1).png" data-hover="kiwi.png">
+            </a>
+            <h3>Kiwi</h3>
+        </div>
+
+        <div class="card">
+            <a href="product_banana.html">
+                <img src="banana (1).png" alt="Banana Icon" data-default="banana (1).png" data-hover="banana.png">
+            </a>
+            <h3>Banana</h3>
+        </div>
+
+        <div class="card">
+            <a href="product_orange.html">
+                <img src="orange (1).png" alt="Orange Icon" data-default="orange (1).png" data-hover="orange.png">
+            </a>
+            <h3>Orange</h3>
+        </div>
+
+        <!-- MORE CARDS BELOW -->
+
+        <div class="more-cards-area hidden-content" id="more-cards">
+
+            <div class="card">
+                <a href="product_mango.html">
+                    <img src="mango (1).png" alt="Mango Icon" data-default="mango (1).png" data-hover="mango.png">
+                </a>
+                <h3>Mango</h3>
+            </div>
+
+            <div class="card">
+                <a href="product_pineapple.html">
+                    <img src="pineapple (1).png" alt="Pineapple Icon" data-default="pineapple (1).png" data-hover="pineapple.png">
+                </a>
+                <h3>Pineapple</h3>
+            </div>
+
+            <div class="card">
+                <a href="product_apricot.html">
+                    <img src="apricot (1).png" alt="Apricot Icon" data-default="apricot (1).png" data-hover="apricot.png">
+                </a>
+                <h3>Apricot</h3>
+            </div>
+
+            <div class="card">
+                <a href="product_watermelon.html">
+                    <img src="watermelon (1).png" alt="Watermelon Icon" data-default="watermelon (1).png" data-hover="watermelon.png">
+                </a>
+                <h3>Watermelon</h3>
+            </div>
+
+            <div class="card">
+                <a href="product_lemon.html">
+                    <img src="lemon (1).png" alt="Lemon Icon" data-default="lemon (1).png" data-hover="lemon.png">
+                </a>
+                <h3>Lemon</h3>
+            </div>
+
+            <div class="card">
+                <a href="product_dragon-fruit.html">
+                    <img src="dragon-fruit (1).png" alt="Dragon Fruit Icon" data-default="dragon-fruit (1).png" data-hover="dragon-fruit.png">
+                </a>
+                <h3>Dragon Fruit</h3>
+            </div>
+
+            <div class="card">
+                <a href="product_cherry.html">
+                    <img src="cherry (1).png" alt="Cherry Icon" data-default="cherry (1).png" data-hover="cherry.png">
+                </a>
+                <h3>Cherry</h3>
+            </div>
+
+            <div class="card">
+                <a href="product_pear.html">
+                    <img src="pear (1).png" alt="Pear Icon" data-default="pear (1).png" data-hover="pear.png">
+                </a>
+                <h3>Pear</h3>
+            </div>
+
+            <div class="card">
+                <a href="product_raspberry.html">
+                    <img src="raspberry (1).png" alt="Raspberry Icon" data-default="raspberry (1).png" data-hover="raspberry.png">
+                </a>
+                <h3>Raspberry</h3>
+            </div>
+
+            <div class="card">
+                <a href="product_plum.html">
+                    <img src="plum (1).png" alt="Plum Icon" data-default="plum (1).png" data-hover="plum.png">
+                </a>
+                <h3>Plum</h3>
+            </div>
+
+            <div class="card">
+                <a href="product_avocado.html">
+                    <img src="avocado (1).png" alt="Avocado Icon" data-default="avocado (1).png" data-hover="avocado.png">
+                </a>
+                <h3>Avocado</h3>
+            </div>
+
+            <div class="card">
+                <a href="product_melon.html">
+                    <img src="melon (1).png" alt="Melon Icon" data-default="melon (1).png" data-hover="melon.png">
+                </a>
+                <h3>Melon</h3>
+            </div>
+
+            <div class="card">
+                <a href="product_papaya.html">
+                    <img src="papaya (1).png" alt="Papaya Icon" data-default="papaya (1).png" data-hover="papaya.png">
+                </a>
+                <h3>Papaya</h3>
+            </div>
+
+            <div class="card">
+                <a href="product_blueberry.html">
+                    <img src="blueberry (1).png" alt="Blueberry Icon" data-default="blueberry (1).png" data-hover="blueberry.png">
+                </a>
+                <h3>Blueberry</h3>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- Dynamic Filter Section (Requirement 4: Form 1) -->
+<section class="filter-section" id="fruit_facts">
+    <h2>Our <span>Fruit Facts</span> Catalogue</h2>
+    <form class="filter-form" id="catalogueFilterForm">
+        
+        <div class="form-group">
+            <label for="fruitSearch">Search Fruit</label>
+            <input type="text" id="fruitSearch" placeholder="e.g., Apple">
+        </div>
+
+        <button type="submit" id="applyFilterBtn" class="cta">APPLY FILTER</button>
+        <div id="filter-message"></div>
+
+    </form>
+</section>
+
+<!-- CONTACT + MAP SECTION -->
+<section class="contact-grid-section" id="contact">
+    <h2 class="contact-title">Get In <span>Touch</span> With Us</h2>
+
+    <div class="contact-grid">
+
+        <!-- Contact Card -->
+        <div class="contact-card">
+            <h3>Contact Us</h3>
+
+            <p class="contact-text">Reach out anytime — we’re here to help.</p>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="name" placeholder="Enter your name" required maxlength="100">
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea name="message" placeholder="Write something..." rows="5" required maxlength="2000"></textarea>
+                </div>
+
+                <button type="submit" class="cta">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Map -->
+        <div class="contact-map-wrapper">
+            <h3>Find Us</h3>
+            <div class="map-frame">
+                <iframe class="contact-map" title="Frutica Main Store location" loading="lazy" style="border:0;" src="https://www.openstreetmap.org/export/embed.html?bbox=-118.2837%2C34.0322%2C-118.2037%2C34.0722&amp;layer=mapnik&amp;marker=34.0522%2C-118.2437"></iframe>
+                <div class="map-popup"><b>Frutica Main Store</b><br>123 Fruit Street, Freshville, CA</div>
+            </div>
+            <button type="button" class="cta" style="align-self:flex-start;" onclick="window.open('https://www.openstreetmap.org/?mlat=34.0522&amp;mlon=-118.2437#map=15/34.0522/-118.2437', '_blank', 'noopener')">View More</button>
+        </div>
+
+    </div>
+</section>
+
+
+<div class="floating-buttons">
+    <a href="#" class="floating-button"><i class="fas fa-th"></i>Browse Demos</a>
+    <a href="#" class="floating-button"><i class="fas fa-shopping-cart"></i>Buy Now!</a>
+    <a href="#" class="floating-button"><i class="fas fa-download"></i>Export Section</a>
+</div>
+
+</main>
+
+<!-- FOOTER SECTION -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-column">
+            <h4>Frutica</h4>
+            <p>We are a premium fresh fruit agency focused on bringing you the most elegant and stylish produce for your business and personal needs.</p>
+            <div class="social-links">
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html#team">Team</a></li>
+                <li><a href="wiki_faq.html">Help / Wikis</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Products</h4>
+            <ul>
+                <li><a href="index.html#products">Seasonal Baskets</a></li>
+                <li><a href="index.html#products">Premium Export</a></li>
+                <li><a href="index.html#products">Wholesale Orders</a></li>
+                <li><a href="index.html#products">Fruit Jams</a></li>
+                <li><a href="index.html#products">Juice Subscriptions</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Have a Question?</h4>
+            <p><i class="fas fa-map-marker-alt" style="color:var(--accent-2); margin-right: 8px;"></i> 123 Fruit Street, Freshville, CA 90210</p>
+            <p><i class="fas fa-phone" style="color:var(--accent-2); margin-right: 8px;"></i> <a href="tel:+12345678900">+1 234 567 8900</a></p>
+            <p><i class="fas fa-envelope" style="color:var(--accent-2); margin-right: 8px;"></i> <a href="mailto:info@frutica.com">info@frutica.com</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2025 Frutica. All rights reserved. | <a href="#">Terms & Conditions</a>
+    </div>
+</footer>
+
+<div class="chat"><i class="fas fa-comment-dots"></i></div>
+
+
+<script src="design.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+
+</script>
+</body>
+</html>
